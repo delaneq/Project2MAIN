@@ -12,8 +12,10 @@
         <div class="main-box">
             <div class="first-block">
                 <div class="first-p">
-                    <h1>Блоги по программированию</h1>
-                    <h3>Популярные и лучшие публикации по программированию для начинающих и профессиональных программистов и IT-специалистов.</h3>
+                    <div class="block-header">
+                        <h1>Мои блоги</h1>
+                        <a href="/newblog" class="btn-main">Новый блог</a>
+                    </div>
                     <img src="/images/main-content-img.svg" alt="">
                 </div>
                 <div class="second-p">
@@ -81,23 +83,14 @@
             
         </div>
     
-        <div class="second-box">
-            <h1>Категории</h1>
-            <!-- <ul>
-                <li><a href="">Прогнозы в IT</a></li>
-                <li><a href="">Веб-разработка</a></li>
-                <li><a href="">Мобильная разработка</a></li>
-                <li><a href="">Фриланс</a></li>
-                <li><a href="">Алгоритмы</a></li>
-                <li><a href="">Тестирование IT систем</a></li>
-                <li><a href="">Разработка игр</a></li>
-                <li><a href="">Дизайн и юзабилити</a></li>
-                <li><a href="">Искуственный Интеллект</a></li>
-                <li><a href="">Машинное обучение</a></li>
-            </ul> -->
-            <% categories.forEach((category) => { %>
-                <a href=""><%= category.name %></a>
-            <% }) %>
+        <div class="profile-box">
+            <img src="/images/test-avatar.png" alt="" class="avatar">
+            <h3 class="profile-name">Елнур Сеитжанов</h3>
+            <p class="profile-desc">В основном пишу про веб - разработку, на React & Redux</p>
+
+            <span class="posts"><p>285 постов за все время</p></span>
+
+            <a href="/profileedit" class="btn-main">Редактировать</a>
         </div>
     </div>
     

@@ -1,0 +1,26 @@
+
+/* Правая часть(профиль) - profile-box */
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3% 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    width: 15%;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    margin-left: 5%;
+}
+.profile-box > img{
+    width: 200px;
+    height: 200px;
+}
+
+.block-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
