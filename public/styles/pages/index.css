@@ -1,0 +1,144 @@
+.container {
+    /* padding: 5% 5%; */
+    margin: 3% 5%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    box-sizing: border-box;
+}
+.main-box {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 3% 5%;
+    width: 60%;
+}
+
+
+.first-block {
+    text-align: center;
+}
+.first-block > .first-p > h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.first-p > h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.first-p > img{
+    width: 760px;
+    height: 402px;
+}
+
+.first-p{
+    margin-bottom: 30px;
+}
+
+
+
+
+.second-p > h2{
+    text-align: start;
+    line-height: 24px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.second-p > p {
+    text-align: start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+#first-paragraph {
+    margin-bottom: 30px;
+}
+#second-paragraph {
+    margin-bottom: 30px;
+}
+#third-paragraph {
+    margin-bottom: 40px;
+}
+
+
+
+/* Конец блока */
+.comments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comments img {
+    width: 28px;
+    height: 24px;
+    margin-right: 5px;
+}
+.comment {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Правая часть - second-box */
+.second-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3% 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    width: 15%;
+    height: fit-content;
+
+}
+.second-box li{
+    margin-bottom: 10px;
+    color: #007BFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+
+}
+
+.second-box ul{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
