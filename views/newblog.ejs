@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs')%>
+    <title>Новый блог</title>
+</head>
+<body>
+    <%- include ('partials/header.ejs')%>
+    <div class="box">
+        <div class="main main-blog">
+            <h3>Новый блог</h3>
+
+            <form action="/api/createblog" method="POST" class="form-main">
+                <fieldset>
+                    <input type="text" placeholder="Введите заголовок блога" name="email">
+                </fieldset>
+
+                <fieldset>
+                    <!-- <legend>Выберите категорию</legend>                     -->
+                    <select name="categories" class="form-select" aria-label="Default select example" required>
+                        <option selected = "selected">Выберите категорию</option>
+                        <option value="">Прогнозы в IT</option>
+                        <option value="">Веб-разработка</option>
+                        <option value="">Мобильная разработка</option>
+                        <option value="">Фриланс</option>
+                        <option value="">Алгоритмы</option>
+                        <option value="">Тестирование IT систем</option>
+                        <option value="">Разработка игр</option>
+                        <option value="">Дизайн и юзабилити</option>
+                        <option value="">Искуственный Интеллект</option>
+                        <option value="">Машинное обучение</option>
+                    </select>           
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label class="input-file">
+                            <input type="file" name="file" accept="image/*">		
+                            <span>Выберите картинку</span>
+                        </label>
+
+
+
+                    </div>                
+                </fieldset>
+
+                <fieldset>
+                    <textarea placeholder="Введите описание блога" id="blog-textarea" class="textarea" cols="90" rows="10"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit" class="btn-main">Создать</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

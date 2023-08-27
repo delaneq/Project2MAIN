@@ -1,9 +1,8 @@
 .container {
-    /* padding: 5% 5%; */
-    margin: 3% 5%;
+    padding: 5% 5%;
     width: 100%;
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     box-sizing: border-box;
 }
 .main-box {
@@ -35,6 +34,8 @@
 
 .first-p{
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -79,6 +80,7 @@
 }
 .comment {
     display: flex;
+    margin-bottom: 7%;
 }
 
 
@@ -120,25 +122,36 @@
     padding: 3% 30px;
     background-color: #fff;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    width: 15%;
+    /* width: 15%; */
     height: fit-content;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    margin-left: 5%;
 }
-.second-box li{
+.second-box li a{
+    text-decoration: none;
     margin-bottom: 10px;
     color: #007BFF;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    list-style: none;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    margin: 0;
+}
+.second-box li a:hover{
+    border-bottom: 2px solid rgba(0, 123, 255, .8);
 
+}
+.second-box li{
+    list-style: none;
 }
 
 .second-box ul{
     width: max-content;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
+    gap: 20px;
 }

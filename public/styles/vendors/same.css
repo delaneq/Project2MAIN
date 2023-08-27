@@ -1,0 +1,32 @@
+.btn-main {
+    display: inline-block;
+    border: none;
+    background-color: #00A2DC;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 15px 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box{
+    height: 100%;
+}
+
+.main{
+    height: 100vh;
+}
+
+.textarea {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}

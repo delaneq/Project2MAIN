@@ -12,7 +12,15 @@ app.use(json());
 app.get('/', (req, res) => {
     res.render('index');
 }); 
-
+app.get('/signin', (req, res) => {
+    res.render('signin')
+})
+app.get('/signup', (req, res) => {
+    res.render('signup')
+})
+app.get('/newblog', (req, res) => {
+    res.render('newblog')
+})
 
 // Задаем порт сервера и функцию что бы запускался сервер
 const PORT = 8003;

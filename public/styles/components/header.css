@@ -61,18 +61,7 @@ header{
 
 
 /* Кнопки регистрации и войти */
-.auth-buttons a {  
-    display: inline-block;
-    border: none;
-    background-color: #00A2DC;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 8px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding: 15px 25px;
-}
+
 
 .auth-buttons {
     display: flex;

@@ -1,0 +1,62 @@
+.main-blog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 5% 5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+.box{
+    padding: 5% 5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.main > h3{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+
+.form-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    /* margin-top: 10%; */
+}
+
+
+
+.form-main fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+}
+
+
+
+.form-main fieldset > input {
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-main fieldset button{
+    padding: 8px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
