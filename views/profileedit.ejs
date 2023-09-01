@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs')%>
+    <title>Редактирование профиля</title>
+</head>
+<body>
+    <%- include ('partials/header.ejs')%>
+    <div class="box">
+        <div class="main main-edit">
+            <h3>Редактировать профиль</h3>
+
+
+                <div>
+                    <label class="input-file">
+                        <input type="file" name="file" accept="image/*">		
+                        <span>Выберите картинку для аватарки</span>
+                    </label>
+                </div>                
+
+
+            <form action="/api/createblog" method="POST" class="form-main">
+                <fieldset>
+                    <input type="text" placeholder="Введите имя" name="email">
+                </fieldset>
+
+                
+
+                <fieldset>
+                    <textarea placeholder="Введите описание профиля" id="blog-textarea" class="textarea" cols="90" rows="10"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit" class="btn-main">Сохранить</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

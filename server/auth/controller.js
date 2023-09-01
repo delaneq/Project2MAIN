@@ -38,6 +38,17 @@ const signIn = (req, res) => {
     res.redirect('/profile');
 }
 
+// const signIn = (req, res) => {
+//     if (req.user.isAdmin) {
+//         res.redirect(`/admin/${req.user.id}`)
+//         console.log('privet')
+//     } else {
+//         res.redirect(`/profile/${req.user.id}`);
+
+//     }
+
+// }
+
 const signOut = (req, res) => {
     req.logout((err) => {
         if (err) { console.log('error') }

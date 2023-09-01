@@ -7,8 +7,26 @@
         <a href="" class="search-button"><img src="/images/search-logo.svg" alt="">Найти</a>
     </div>
     <div class="auth-buttons">
-        <a href="/signup" class="signup btn-main">Регистрация</a>
-        <a href="/signin" class="signin btn-main">Вход</a>
+
+
+
+        <% if (user.email && user.isAdmin) { %>
+            <a href="/admin/<%= user.id %>" class="header-avatar">
+                <img src="/images/default-avatar.jfif" alt="">
+            </a>
+        <% } else if (user.email) { %>
+            <a href="/profile/<%= user.id %>" class="header-avatar">
+                <img src="/images/default-avatar.jfif" alt="">
+            </a>
+        <% } else { %>
+            <a href="/signup" class="signup btn-main">Регистрация</a>
+            <a href="/signin" class="signin btn-main">Вход</a>
+        <% } %>
+
+
+
+        <!-- <a href="/signup" class="signup btn-main">Регистрация</a>
+        <a href="/signin" class="signin btn-main">Вход</a> -->
     </div>
 
 </header>

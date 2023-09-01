@@ -129,7 +129,7 @@
     top: 20px;
     margin-left: 5%;
 }
-.second-box li a{
+.second-box a{
     text-decoration: none;
     margin-bottom: 10px;
     color: #007BFF;
@@ -141,15 +141,13 @@
     transition: .4s;
     margin: 0;
 }
-.second-box li a:hover{
+.second-box a:hover{
     border-bottom: 2px solid rgba(0, 123, 255, .8);
 
 }
-.second-box li{
-    list-style: none;
-}
 
-.second-box ul{
+
+.second-box {
     width: max-content;
     display: flex;
     flex-direction: column;
